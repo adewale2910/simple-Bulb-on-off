@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    
+</head>
+
+<body align="center" style="background-color: black;">
+    <marquee behavior="SCROLL" direction="LEFT" style="color: WHITE;"> WE ARE THE LIGHT OF THE WORLD </marquee>
+    
+    <img id="mn" src="./bulb 1.png" width="400px" height="400px">
+    <button id="btn" onclick="me('ade')" style="background-color: red;">ON</button>
+     <div id="nn" style="color: white;">
+
+     </div>
+    <script type="text/javascript">
+        let g = 1
+        function me() {
+            if (g == 1) {
+                mn.src="./bulb 1.png";
+                btn.innerText = "ON"
+                g=0
+            } else if (g == 0) {
+                mn.src="./bulb 2.png";
+                btn.innerText = "OFF"
+                g=1
+            }
+        }
+    
+    </script>
+   
+</body>
+</html>
